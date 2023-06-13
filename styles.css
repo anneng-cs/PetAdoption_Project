@@ -61,7 +61,6 @@ footer{
   border: 1px solid #ccc;
   border-radius: 5px;
   padding: 2em;
-  border-radius: 5px;
   box-shadow: 0 0 10px #62c0ff5a;
 }
 
@@ -100,7 +99,6 @@ footer{
   gap: 4em;
   padding: 20px;
   margin: 4em;
-  
 }
 
 .animal-card {
@@ -250,6 +248,9 @@ footer{
 }
 
 /* ---------------------------- Contact Page ----------------------- */
+contact-html{
+  height: 100%;
+}
 .contact-body {
   font-family: Arial, sans-serif;
   background-color: #f5f5f5;
@@ -264,11 +265,9 @@ footer{
   margin: 7em auto; 
   padding: 20px;
   background-color: #fff;
-  box-shadow: 0 0 10px #0000001a;
   border-radius: 5px;
   box-shadow: 0 0 10px #62c0ff5a;
 }
-
 
 form  h1 {
   text-align: center;
@@ -341,6 +340,8 @@ form  h1 {
       grid-template-columns: 2fr;
       margin: 1em;
       padding: 0.5em;
+      position: relative;
+
     }
     .content-container::before{
       content: "";
@@ -359,7 +360,6 @@ form  h1 {
     }
 
     .content-container .content {
-      /* flex: 0 0 60%; */
       margin-right: 2em;
       padding: 2em;
     }
@@ -368,7 +368,6 @@ form  h1 {
     .need-adoption {
       grid-template-columns: 1fr;
       grid-template-rows: auto;
-    
     }
              /* animal cards */
     .pet-container {
@@ -380,9 +379,7 @@ form  h1 {
 }
 
  @media only screen and (min-width: 481px) and (max-width: 768px) {
-
       /* header  */
-
       .header-container{
         grid-template-columns: 1fr;
       }
@@ -393,16 +390,16 @@ form  h1 {
       .adoption-links{
         text-align: center;
       }
-          /* content-containers */
+      /* content-containers */
       .content-container{
         position: relative;
         grid-template-columns: 2fr;
         margin: 1.2em;
         padding: 0.7em;
+        
       }
       .content-container::before{
         content: "";
-        /* background-image: url(/images/footprints-gcb79a9c01_1280.png);  */
         background-image: url(/images/paw-g7d15866dc_640.jpg);      
         background-size:contain;
         position: absolute;
@@ -486,8 +483,7 @@ form  h1 {
         .adoption-content {
           grid-template-columns:  1fr;
           gap: 10px;
-        }
-        
+        }    
 }
 
 @media only screen and (min-width: 1025px) and (max-width:  1200px){
